@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook Sesión 13: Diseño Emocional Asistido por IA</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S1-TM13</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 13: Diseño Emocional Asistido por IA</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 13 - 1o de Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,245 +38,406 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes comprendan los conceptos de Diseño Emocional (visceral, conductual, reflexivo).</li>
-                                        <li>Que aprendan a usar una simulación de IA (Análisis Semántico) para traducir una emoción en un "lenguaje de formas".</li>
-                                        <li>Que apliquen este lenguaje de formas para refinar su modelo 3D con una intención emocional específica.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
-                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
-                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
-                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
-                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Una versión final y refinada de su modelo 3D ergonómico.</li>
-                                        <li>Las características estéticas del modelo deben haber sido informadas por el análisis semántico de Xolo para evocar una emoción específica.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Cuentas de Onshape para cada alumno.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar que Onshape y Xolo están funcionales.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Repasar los 3 niveles del Diseño Emocional de Don Norman. Entender el concepto de "Análisis Semántico" como un análisis de correlación entre palabras y características visuales.</li>
-                                        <li><strong>Preparación de Ejemplos:</strong> Tener listas imágenes de productos que claramente evocan diferentes emociones: un coche deportivo (agresividad/energía), un producto de spa (calma), un juguete infantil (diversión).</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar Onshape para organizar diseños en módulos y Part Studios para separar componentes y comprender la modularidad y el pensamiento sistémico.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué es un sistema modular y por qué es clave en productos tecnológicos. Analicemos cómo la IA trabaja con módulos reutilizables para crear sistemas complejos. Guíame a identificar qué partes de mi diseño pueden convertirse en módulos.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Modularidad: Es como construir con bloques de Lego; en lugar de una sola pieza gigante, creas partes pequeñas que se pueden quitar, poner o cambiar fácilmente.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar Onshape para dividir un diseño grande en piezas o módulos más pequeños y organizados.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes formas de agrupar piezas en Part Studios para entender cómo la reutilización facilita cambios rápidos.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Computadora o Tablet (1 por estudiante)</label>
+                        <label><input type="checkbox"> Acceso a Onshape (https://www.onshape.com/)</label>
+                        <label><input type="checkbox"> Guía de organización de Part Studios</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa diseño 3D en Onshape</label>
+                        <label><input type="checkbox"> 📋 Para organizar: En Onshape → Crear Part Studio → Renombrar módulos → Vincular en Assembly</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Mantener tu cuenta de Onshape segura, cerrar sesión al terminar y cuidar tu computadora/tablet.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre modularidad y pensamiento sistémico (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si Onshape carga lento:</strong> Verificar la conexión a internet y cerrar pestañas innecesarias.</li>
+<li><strong>Si no encuentran sus piezas:</strong> Revisar que estén trabajando en el Documento correcto y que los Part Studios tengan nombres claros.</li>
+<li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Introducir la sesión como la exploración de la dimensión final del diseño: la mente y la emoción.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador presenta el desafío de diseñar cómo los productos nos hacen sentir.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Saludos, diseñadores de experiencias. Han diseñado para la función, la máquina y el cuerpo. Hoy, nos adentramos en la dimensión final y más humana: la mente y la emoción. Un producto no es solo lo que hace o cómo se siente físicamente; es cómo nos *hace sentir*. Hoy, su desafío es convertirse en directores de emociones, utilizando la IA como su traductor de sentimientos a formas.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Procedan con el inicio de sesión: 'Hola Xolo, listo para la Misión 13', seguido de su nombre, perfil y gustos. Esperen su confirmación para comenzar.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy convertirán sus diseños en sistemas inteligentes y modulares!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Modularidad y Pensamiento Sistémico.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A organizar diseños en módulos para que sean fáciles de mejorar y reutilizar.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros de naves espaciales en SpaceX usan esta tecnología para cambiar partes dañadas sin reconstruir todo el cohete.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
-                <p>Presentar el marco del Diseño Emocional de Don Norman y el concepto de Análisis Semántico por IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Presentando el Diseño Emocional y el Análisis Semántico IA ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador introduce los tres niveles del diseño y la capacidad de la IA para correlacionar emociones y formas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El gran teórico Don Norman propone que interactuamos con objetos en tres niveles: el **visceral** (apariencia), el **conductual** (usabilidad) y el **reflexivo** (significado). Ya han trabajado en lo conductual (ergonomía). Hoy nos enfocamos en lo visceral y reflexivo. ¿Cómo se diseña para una emoción como 'calma'? La IA puede realizar un **Análisis Semántico**, encontrando la correlación entre palabras (emociones) y características visuales (formas). Su misión es definir una emoción y usar a Xolo para que les sugiera un 'lenguaje de formas' para evocarla.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo crear módulos independientes en Onshape.</li>
+                            <li>Introduce el concepto de pensamiento sistémico y piezas reutilizables.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar Part Studios para separar su diseño.</li>
+                            <li>Aprender sobre modularidad y cómo ayuda a escalar proyectos.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El objetivo de hoy es de alto nivel. Al final, podrán decir: <strong>'Yo entiendo los niveles del Diseño Emocional y puedo definir una emoción para mi producto, utilizando una simulación de análisis semántico por IA para generar un prototipo 3D que aplique un lenguaje de formas coherente.'</strong></p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar Onshape para modularizar diseños y entender el pensamiento sistémico.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a aprender un secreto de los grandes inventores: la modularidad. Abran su chat con XOLO y denle un saludo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará cómo dividir sus diseños en partes inteligentes que pueden reutilizar. Aprovechen para preguntarle por qué las piezas de Lego son el mejor ejemplo de esto y cómo pueden aplicar esa lógica en Onshape. ¡Pregúntenle todo lo que necesiten!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM (Computación Afectiva y Análisis Semántico) ⏰ 12 minutos</h2>
-                <p>Fase de diálogo con Xolo para entender cómo traduce emociones a formas y cómo será el proceso de simulación.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: El Traductor de Emociones ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre su rol como analista semántico y cómo funciona la traducción de emociones.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Entremos al A.I. GYM. Hoy, el rol de Xolo es el de un analista semántico, una rama de la Computación Afectiva. No analiza la geometría, analiza el significado. Para entenderlo, consúltenle: <strong>'Xolo, explícame cómo traduces emociones a un lenguaje visual de formas, con ejemplos para 'Agresividad', 'Calma' y 'Diversión'.'</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: La Simulación de Diseño Emocional ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) El facilitador explica el proceso de 3 pasos que seguirán en el Brain Spark.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los diseños modulares conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique modularidad en el diseño.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar módulos intercambiables.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Organizar sus Part Studios en Onshape y probar el ensamblaje.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a rediseñar mi proyecto en módulos intercambiables. Quiero definir al menos 2 módulos y explicar qué función cumple cada uno. Dame una vibe tipo “arquitecto de sistemas”."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El proceso que seguiremos es simple y poderoso. Primero, ustedes, como directores, **Definirán la Emoción** que su producto debe evocar. Segundo, Xolo realizará el **Análisis y les dará una Sugerencia** de un 'lenguaje de formas'. Tercero, ustedes realizarán la **Aplicación**, tomando esas sugerencias y refinando su modelo 3D. Este es el flujo de trabajo para diseñar con intención emocional.</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Lograste separar las piezas en diferentes Part Studios con éxito?</li>
+                            <li>¿Qué pasa si cambias el tamaño de un módulo? ¿Se ajusta el resto del sistema?</li>
+                            <li>¿Funciona igual el ensamblaje si usas un módulo A vs un módulo B?</li>
+                            <li>¿Cómo ayuda la modularidad a que tu proyecto sea más fácil de reparar o mejorar?</li>
+                            <li>Al ver tu diseño como un sistema de partes, ¿qué nuevas funciones podrías agregarle fácilmente?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear como verdaderos arquitectos de sistemas! Vamos a tomar nuestro diseño y transformarlo en algo mucho más potente usando módulos. El flujo es sencillo: platiquen con XOLO para idear cómo dividir su proyecto, definan un VIBE, obtengan su GCS y llévenlo a Onshape. Por ejemplo, podrían diseñar un dron donde la cámara sea un módulo y las alas otro, ¡así podrían cambiarlas cuando quieran! No olviden revisar las preguntas de experimentación para ver si su sistema es realmente flexible. Si tienen errores organizando sus Part Studios o dudas con las herramientas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con dos módulos básicos. ¿Puedes enseñarme cómo hacer que mi diseño incluya un módulo universal que encaje en cualquier parte del sistema?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Aplicación del Lenguaje de Formas) ⏰ 18 minutos</h2>
-                <p>Fase de trabajo práctico donde los estudiantes definen una emoción, reciben el "lenguaje de formas" de Xolo y lo aplican a su modelo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Definición, Análisis e Implementación ⏰ 18 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Los estudiantes ejecutan el ciclo completo de diseño emocional de forma autónoma.</p>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué módulos encajan bien.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué módulos funcionaron mejor en tu diseño? ¿Qué te sorprendió de ver tu proyecto dividido en partes?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, al Brain Spark. Tienen 18 minutos. Primero, reflexionen sobre su producto y definan la emoción clave que quieren evocar. Dígansela a Xolo, por ejemplo: **"Para mi ratón ergonómico 'Flow', quiero evocar 'calma y concentración'."** Segundo, reciban y analicen su "Sugerencia de Lenguaje de Formas". Tercero, vuelvan a su modelo 3D en Onshape y revisen su diseño a la luz de estas sugerencias. Apliquen las modificaciones, refinando el modelo no solo para el cuerpo, sino para la emoción.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi diseño usa módulos intercambiables. Me sorprendió que al cambiar una parte, el sistema seguía funcionando."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
-                <p>Fase final de "Exposición de Diseño Emocional" donde los estudiantes explican cómo diseñaron una experiencia.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre la nueva forma de presentar el trabajo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                     Tiempo. Observen su modelo final. No piensen en "hice un ratón". Piensen en cómo explicarlo. Prepárense para decir: <strong>"Diseñé una experiencia de [su emoción elegida]. Para lograrlo, usé..."</strong>
-                                </p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Pair (Exposición de Diseño Emocional) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Los estudiantes comparten sus modelos y explican su intención emocional.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    En parejas, es la "Exposición de Diseño Emocional". Compartan sus pantallas. Expliquen la experiencia que diseñaron y cómo las sugerencias del análisis semántico les ayudaron a lograrlo. Fíjense en cómo una pequeña modificación en una curva puede cambiar la personalidad de un objeto.
-                                </p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) El facilitador consolida la sesión, destacando la culminación del "triángulo del gran diseño".</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    Hoy han completado el triángulo del gran diseño: función, ergonomía y emoción. Han aprendido que los objetos no solo 'son', sino que también 'comunican'. Han utilizado la IA como una herramienta para diseñar con una intención emocional clara. Este nivel de pensamiento es lo que separa un producto de una obra de arte funcional. Su capacidad para dirigir no solo la forma, sino el sentimiento, es su mayor valor como diseñadores.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
